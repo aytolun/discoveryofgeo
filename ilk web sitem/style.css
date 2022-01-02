@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Cormorant Garamond', sans-serif; /* ilk yazı tipi desteklenmezse sans serif seklinde yazılacak*/
+    line-height: 1.5rem; /*yazı satırları arasındaki bosluk */
+    text-shadow: 1px 1px 6px white;
+    font-size:20px;
+
+}
+body{
+   
+   /* background-image: linear-gradient(315deg, #ab51e7 0%, #338b62 50%, #80e6f1 100%);*/ /*uc renkli arka plan kodu*/
+    background-repeat:repeat;
+    text-align: center;
+    background-image: linear-gradient(315deg, #80e6f1 0%,#338b62 50%,#ab51e7 100% ); /*uc renkli arka plan kodu*/
+
+
+
+}
+/* büyük baslık kodlarının baslangıcı */
+h3 {
+    animation-name: baslik-animation; /* basligimiza animasyon ekleyecegiz */
+    animation-duration: 3s;
+    font-family: 'Cormorant Garamond', sans-serif;
+    color: #202020;
+    text-transform: uppercase; /*büyük harfler ile yazılcak */
+    letter-spacing: -2px;
+}
+h3 span {
+    display: block;
+    margin: 11px 0 17px 0;
+    font-size: 80px;
+    line-height: 80px;
+    line-height: auto;
+    color: #f1ebe5;
+    text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+    letter-spacing: -4px;
+}
+/* baslık kodları bitis*/
+
+
+
+
+
+
+/*Navbar kod baslangıc*/
+nav{
+    background:transparent;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-style:solid; /*navbarın altına çizgi çekme*/
+}   
+/*navbar kod bitis*/
+
+
+/* menü kısmı baslangıc*/
+.mainMenu{
+    display: flex;
+    margin-right: 5%;
+    font-family: Cormorant Garamond,sans-serif;
+}
+.mainMenu li a{
+    display: inline-block;
+    padding: 15px;
+    color: #fff;
+    text-transform: uppercase; /* büyük harf*/
+    font-size: 1rem;
+    text-decoration: none;
+    
+}
+.mainMenu li:hover{
+    background-color:transparent;
+    text-decoration:underline; /*altı çizili */
+    position:relative;
+    border-bottom:2px solid rgb(255, 255, 255);
+    transition: 0.3s;
+    
+}
+/* menü kodu bitis*/
+
+/*logonun kodları baslangıc*/
+.logo{
+    height: 150px;
+    max-width: 700px;
+    background:transparent;
+    margin: 40px auto 0 auto;
+    padding: 20px;
+    display:flex;
+    cursor:pointer; /* logonun üstüne geldiğinde imlec degisecek*/
+
+}
+/* logo kod bitis*/
+
+
+
+.content-container{
+    height: 100px;
+    max-width: 1343px;
+    margin: 40px auto 0 auto;
+    line-height: 1.6rem;
+    padding: 20px 50px;
+    display:table;
+    background: transparent;
+
+
+}
+.ulkeler-container{
+  
+   width:auto;
+   margin: auto;
+   margin-left: 10%;
+   margin-right: 10%;
+   
+}
+.ulke{
+    width:300px;
+    padding: 20px;
+    float: left;
+    background:transparent;
+    margin: 20px;
+    
+}
+
+.resim{
+    border-radius: 25%;
+    height: 300px;
+    width: 300px;
+   
+    -webkit-box-shadow: 0 0 6px 4px white;
+	-moz-box-shadow: 0 0 6px 4px white;
+	box-shadow: 0 0 6px 4px white;
+
+
+    position: relative;
+    
+    transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -ms-transition: all .2s ease-in;
+}
+
+.resim:hover
+{ /*resmin üstüne gelince 1.2 oranında büyütecek */
+    z-index:4;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);  
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.button a{ 
+    display: block;
+    width: 75px;
+    height: 75px;
+    background: rgb(135, 228, 163);
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+
+}
+.button a:hover{
+    background: #82bef0
+}
+/* keyframes ile animasyon ekleme*/
+@keyframes baslik-animation{
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+footer{ 
+ 
+   position: relative;
+   margin-top: -133px; /* footerın yuksekliginin eksi degeri */
+   height: 133px;
+   clear:both;
+    font-family: 'Cormorant Garamond', sans-serif;
+    color: white;
+}
+footer a{
+    color: white;
+}
+
+/*iletisim sayfası baslangıc*/
+.baslik{
+    color:rgb(146, 78, 209);
+}
+.ana-form{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#contact{
+    background: white;
+    padding: 25px;
+    margin: 100px 0;
+    box-shadow: 0 0 30px 0 rgba(63, 63, 63, 0.2), 0 5px 5px 0 rgba(55, 56, 56, 0.24);
+}
+
+#contact h2{
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.form-control{
+    min-width: 100%;
+    padding: 5px; 
+    width: 100%;
+}
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+#contact textarea{
+    height: 120px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type="submit"]{
+    cursor: pointer;/* üstüne gelince imlec degisecek*/
+    width: 100%;
+    border:none;
+    background: #b962cf;
+    color: #fff;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+/*iletisim bitis */
+
+
+
+
+/*sayfayı responsive hale getirme*/
+@media (max-width:768px){ /*768px yani tablette gecerli olacak kod */
+  h3{
+    text-align: center;
+     width: auto;
+     height: auto;
+  }
+ 
+.mainMenu{
+    display: flex;
+        width: auto;
+        height: auto;
+        /*float:inline-start;*/
+
+        flex-direction: column;
+}
+    .ulke{
+        max-width: 800px;
+        width: auto;
+    }
+    .resim{
+       width: 270px;
+        height: 270px;
+
+    }
+    .content-container{
+        height: 100px;
+        max-width: 500px;
+        
+        line-height: 0.5rem;
+        padding: 10px;
+        display:table;
+        background: transparent;
+    }
+
+    .ulkeler-container{
+     height: auto;
+  }
+    .resim{
+    width: 250px;
+    height: 250px;
+   }
+}
+
+
+
+
+@media only screen and (max-width:500px){/* telefonda gecerli olacak kod*/
+    h3{
+    text-align: center;
+    max-width: 50%;
+    max-height: 50%;
+    width: auto;
+    height: auto;
+       
+    }
+  
+    .mainMenu{
+       display: flex;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+    }
+    .ulkeler-container{
+        max-width: auto;
+        text-align: justify;
+        display: flex;
+        float:inline-start;
+        flex-direction: column;
+    }
+    .ulke{
+        max-width: 250px;
+        width: auto;
+        
+     }
+    .resim{
+        width: 230px;
+        height: 230px;
+    }
+    .kutu{
+        flex-direction: column;
+    }
+   
+}
+
